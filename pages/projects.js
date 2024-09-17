@@ -4,11 +4,14 @@ export default () => (
   <div>
     <Header />
     <h1>Projects</h1>
+    <h2>Deployed</h2>
     <p>
-      <b>Render:</b> <a>https://africartfrontend.onrender.com/</a>
+      <b>Render:</b>{" "}
+      <a href="https://africartfrontend.onrender.com/">AfricArt</a>
     </p>
+    <h1>Local</h1>
     <p>
-      <b>GitHub:</b> https://github.com/dane-iverson
+      <b>GitHub:</b> <a href="https://github.com/dane-iverson">dane-iverson</a>
     </p>
     <style jsx>{`
       h1 {
