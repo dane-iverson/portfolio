@@ -81,53 +81,22 @@ export default function About() {
         .intro p {
           font-size: 1.5rem;
         }
-        .education,
-        .experience,
-        .skills,
-        .projects,
-        .personal-philosophy,
-        .personal-interests {
+        section {
           background: #f4f4f4;
           border-radius: 10px;
           padding: 2rem;
           margin: 1rem 0;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+          transition: background 0.3s ease, box-shadow 0.3s ease;
         }
-        .education:hover,
-        .experience:hover,
-        .skills:hover,
-        .projects:hover,
-        .personal-philosophy:hover,
-        .personal-interests:hover {
+        section:hover {
           background: #fff;
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .education.active,
-        .experience.active,
-        .skills.active,
-        .projects.active,
-        .personal-philosophy.active,
-        .personal-interests.active {
-          opacity: 1;
-          transform: translateY(0);
         }
         h2 {
           font-size: 2rem;
         }
       `}</style>
-      <script>
-        {`
-          document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.education, .experience, .skills, .projects, .personal-philosophy, .personal-interests');
-            sections.forEach(section => {
-              section.classList.add('active');
-            });
-          });
-        `}
-      </script>
     </div>
   );
 }
