@@ -1,66 +1,133 @@
-import Header from "./Header"
+import Header from "./Header";
 
-export default () => (
-    <div>
-        <Header />
-        <h1>About me</h1>
-        <h3><b>Educational History:</b></h3>
-        <p>I am a dedicated developer who values teamwork and discipline.
-            My education at Grey High School, an all-boys school known for its emphasis on brotherhood and strict discipline,
-            has greatly contributed to the person I am today.
-            The school's focus on teamwork and camaraderie has instilled in me a strong sense of collaboration and the ability to work well with others.
-            The strict code of conduct also taught me the importance of taking responsibility for my actions and to always strive for excellence.
-            My strong work ethic and determination to succeed has been further developed during my time at Grey high school, which is evident in the high-quality work I produce.
+export default function About() {
+  return (
+    <div className="about-container">
+      <Header />
+      <section className="intro">
+        <h1>About Me</h1>
+        <p>
+          I’m Dane Iverson, a passionate developer and problem solver with a
+          diverse background.
         </p>
-        <h3><b>Passions:</b></h3>
-        <p>I have always been passionate about a few things in my life, and they are Surfing, Racing, developing and building things.
-            Surfing is my way of escaping the daily grind and finding peace in the ocean. I love the rush of catching a wave and the feeling of being one with nature.
-            Racing is another passion of mine. I love the thrill of pushing a vehicle to its limits and the feeling of speed.
-            I have been competing in races for quite some time now and have developed a keen understanding of what it takes to win.
-            Developing is something that I have been doing for a while now.
-            I find it incredibly satisfying to take an idea and turn it into a functioning piece of software or a website.
-            And finally, building things. I have always been fascinated with creating things, whether it's building a piece of furniture or a robot.
-            I find it very satisfying to take raw materials and turn them into something that can be used.
+      </section>
+      <section className="education">
+        <h2>Educational Background</h2>
+        <p>
+          My journey into the world of coding started at HyperionDev in Cape
+          Town, where I honed my skills and deepened my understanding of
+          programming. This education has been instrumental in shaping my
+          approach to development.
         </p>
-        <h3><b>Who I am:</b></h3>
-        <p>I am a highly motivated individual who is driven by a passion for creating and problem-solving.
-            My experience in an all-boys school known for its emphasis on brotherhood and strict discipline has instilled in me a strong sense of teamwork and the ability to work well with others.
-            I possess a keen understanding of the importance of taking responsibility for my actions and always striving for excellence.
-            This mindset is evident in the high-quality work I produce as a developer, where I am able to take an idea and turn it into a functional software or website,
-            I find this process incredibly satisfying.
-
-            Additionally, I am also passionate about outdoor activities such as surfing and racing.
-            These activities have taught me to be in the present moment and to navigate through the unknown.
-            The rush of catching a wave and the feeling of speed while racing have taught me to be adaptable and to push my limits.
-            Lastly, I am also passionate about building things. I find great satisfaction in taking raw materials and transforming them into something functional,
-            this process allows me to unleash my creativity and to think outside the box.
-
-            Overall, I am a well-rounded individual who is driven by a passion for problem-solving and creating.
-            My experiences and passions have helped me to develop a unique perspective and approach to work and life, making me a valuable asset to any team.
+      </section>
+      <section className="experience">
+        <h2>Professional Experience</h2>
+        <p>
+          I’ve gained valuable experience working in various roles, including as
+          a bartender, waiter, and even managing a fast food restaurant. These
+          roles have taught me teamwork, leadership, and problem-solving skills.
         </p>
-        <style jsx>{`
-          h1 {
-            text-align: center;
-            margin-top: 3rem;
-            font-size: 3rem;
-            color: #ff8c00;
-          }
-          p {
-            text-align: center;
-            margin: 2rem 0;
-          }
-          b {
-            font-weight: 600;
-            color: #333;
-          }
-          a {
-            color: #333;
-            text-decoration: none;
-            transition: all 0.2s ease-in-out;
-          }
-          a:hover {
-            color: #ff8c00;
-          }
-        `}</style>
+      </section>
+      <section className="skills">
+        <h2>Skills & Expertise</h2>
+        <p>
+          I’m proficient in the MERN stack and constantly eager to learn new
+          languages and explore video game development. My technical skills are
+          complemented by a problem-solving mindset and a dedication to
+          continuous improvement.
+        </p>
+      </section>
+      <section className="projects">
+        <h2>Notable Projects</h2>
+        <p>
+          One of my most visually appealing projects is AfricArt. While it may
+          not offer the most intricate user experience, its design and
+          aesthetics make it a standout project.
+        </p>
+      </section>
+      <section className="personal-philosophy">
+        <h2>Personal Philosophy</h2>
+        <p>
+          As a problem solver at heart, I approach challenges from various
+          angles and believe in the power of patience and practice. I focus on
+          the present moment and strive to view each problem with an open mind.
+        </p>
+      </section>
+      <section className="personal-interests">
+        <h2>Personal Interests</h2>
+        <p>
+          Outside of coding, I have a love for dirt bikes and extreme enduro
+          riding. I’m a Christian who places my trust and faith in God, and I
+          enjoy story-driven video games that offer immersive experiences.
+        </p>
+      </section>
+      <style jsx>{`
+        .about-container {
+          padding: 2rem;
+          max-width: 1200px;
+          margin: auto;
+        }
+        h1,
+        h2 {
+          color: #ff8c00;
+          text-align: center;
+          margin: 1rem 0;
+        }
+        p {
+          text-align: center;
+          line-height: 1.6;
+          margin: 1rem 0;
+        }
+        .intro p {
+          font-size: 1.5rem;
+        }
+        .education,
+        .experience,
+        .skills,
+        .projects,
+        .personal-philosophy,
+        .personal-interests {
+          background: #f4f4f4;
+          border-radius: 10px;
+          padding: 2rem;
+          margin: 1rem 0;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .education:hover,
+        .experience:hover,
+        .skills:hover,
+        .projects:hover,
+        .personal-philosophy:hover,
+        .personal-interests:hover {
+          background: #fff;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .education.active,
+        .experience.active,
+        .skills.active,
+        .projects.active,
+        .personal-philosophy.active,
+        .personal-interests.active {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        h2 {
+          font-size: 2rem;
+        }
+      `}</style>
+      <script>
+        {`
+          document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.education, .experience, .skills, .projects, .personal-philosophy, .personal-interests');
+            sections.forEach(section => {
+              section.classList.add('active');
+            });
+          });
+        `}
+      </script>
     </div>
-)
+  );
+}
