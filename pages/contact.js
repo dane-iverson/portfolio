@@ -1,44 +1,109 @@
 import Header from "./Header";
+import { useState } from "react";
 
-export default () => (
-  <>
-    <Header />
-    <div>
-      <h1>Contact Information</h1>
-      <p>
-        <b>Phone:</b> (+27)-73-380-1962
-      </p>
-      <p>
-        <b>Email:</b> hyperiondane@gmail.com
-      </p>
-      <p>
-        <b>Address:</b> Gardens, Cape Town, Sotuh Africa
-      </p>
-      <style jsx>{`
-        h1 {
-          text-align: center;
-          margin-top: 3rem;
-          font-size: 3rem;
-          color: #ff8c00;
-        }
-        p {
-          text-align: center;
-          font-size: 1.5rem;
-          margin: 2rem 0;
-        }
-        b {
-          font-weight: 600;
-          color: #333;
-        }
-        a {
-          color: #333;
-          text-decoration: none;
-          transition: all 0.2s ease-in-out;
-        }
-        a:hover {
-          color: #ff8c00;
-        }
-      `}</style>
-    </div>
-  </>
-);
+const links = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/your-profile",
+    icon: "linkedin.svg",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/your-profile",
+    icon: "instagram.svg",
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/dane-iverson",
+    icon: "github.svg",
+  },
+  {
+    name: "OfferZen",
+    url: "https://www.offerzen.com/developers/your-profile",
+    icon: "offerzen.svg",
+  },
+  { name: "Email", url: "mailto:hyperiondane@gmail.com", icon: "email.svg" },
+];
+
+const LinksPage = () => {
+  const [hovered, setHovered] = useState(null);
+
+  return (
+    <>
+      <Header />
+      <div className="container">
+        <h1>Find Me Online</h1>
+        <div className="links">
+          {links.map((link, index) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={() => setHovered(index)}
+              onMouseLeave={() => setHovered(null)}
+              className={hovered === index ? "hovered" : ""}
+            >
+              <img src={`/icons/${link.icon}`} alt={`${link.name} icon`} />
+              <span>{link.name}</span>
+            </a>
+          ))}
+        </div>
+        <style jsx>{`
+          .container {
+            text-align: center;
+            padding: 2rem;
+          }
+          h1 {
+            font-size: 3rem;
+            color: #ff8c00;
+            margin-bottom: 2rem;
+            animation: fadeIn 2s ease-in-out;
+          }
+          .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+          }
+          .links a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+          }
+          .links a img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+            transition: transform 0.3s ease-in-out;
+          }
+          .links a span {
+            transition: color 0.3s ease-in-out;
+          }
+          .links a:hover {
+            transform: scale(1.1);
+            color: #ff8c00;
+          }
+          .links a.hovered img {
+            transform: rotate(360deg);
+          }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}</style>
+      </div>
+    </>
+  );
+};
+
+export default LinksPage;
