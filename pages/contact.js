@@ -4,12 +4,12 @@ import { useState } from "react";
 const links = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-profile",
+    url: "https://www.linkedin.com/in/dane-iverson-51505a238/",
     icon: "linkedin.svg",
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/your-profile",
+    url: "https://www.instagram.com/daneiverson",
     icon: "instagram.svg",
   },
   {
@@ -17,12 +17,7 @@ const links = [
     url: "https://github.com/dane-iverson",
     icon: "github.svg",
   },
-  {
-    name: "OfferZen",
-    url: "https://www.offerzen.com/developers/your-profile",
-    icon: "offerzen.svg",
-  },
-  { name: "Email", url: "mailto:hyperiondane@gmail.com", icon: "email.svg" },
+  { name: "Email", url: "mailto:hyperiondane@gmail.com", icon: "mail.svg" },
 ];
 
 const LinksPage = () => {
