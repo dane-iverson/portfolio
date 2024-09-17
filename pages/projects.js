@@ -5,7 +5,7 @@ export default () => (
     <Header />
     <h1>Projects</h1>
     <p>
-      <b>Heroku:</b> https://infinite-plateau-62536.herokuapp.com
+      <b>Render:</b> <a>https://africartfrontend.onrender.com/</a>
     </p>
     <p>
       <b>GitHub:</b> https://github.com/dane-iverson
