@@ -28,7 +28,7 @@ export default () => (
         <div className="card">
           <a href="https://github.com/dane-iverson" className="card-link">
             <img
-              src="/images/GithubPic"
+              src="/images/GithubPic.png"
               alt="GitHub Profile"
               className="project-image"
             />
