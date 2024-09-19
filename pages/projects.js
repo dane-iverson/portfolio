@@ -12,11 +12,13 @@ export default () => (
             href="https://africartfrontend.onrender.com/"
             className="card-link"
           >
-            <img
-              src="/images/AfricArt.png"
-              alt="AfricArt"
-              className="project-image"
-            />
+            <div className="image-container">
+              <img
+                src="/images/AfricArt.png"
+                alt="AfricArt"
+                className="project-image"
+              />
+            </div>
             <p className="card-text">
               <b>Render:</b> AfricArt
             </p>
@@ -27,11 +29,13 @@ export default () => (
         <h2 className="subtitle">Local</h2>
         <div className="card">
           <a href="https://github.com/dane-iverson" className="card-link">
-            <img
-              src="/images/GithubPic.png"
-              alt="GitHub Profile"
-              className="project-image"
-            />
+            <div className="image-container">
+              <img
+                src="/images/GithubPic.png"
+                alt="GitHub Profile"
+                className="project-image"
+              />
+            </div>
             <p className="card-text">
               <b>GitHub:</b> dane-iverson
             </p>
@@ -83,10 +87,19 @@ export default () => (
           text-align: center;
           text-decoration: none;
         }
+        .image-container {
+          width: 300px; /* Fixed width */
+          height: 200px; /* Fixed height */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden; /* Hide overflow */
+        }
         .project-image {
-          width: 300px; /* Fixed width for consistency */
-          height: 200px; /* Fixed height for consistency */
-          object-fit: cover; /* Maintain aspect ratio and cover the area */
+          width: auto; /* Allow width to adjust */
+          height: 100%; /* Full height */
+          max-width: none; /* Prevent image from resizing */
+          object-fit: contain; /* Maintain aspect ratio */
           transition: opacity 0.3s ease-in-out;
         }
         .card-link:hover .project-image {
