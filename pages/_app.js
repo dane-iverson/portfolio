@@ -1,31 +1,40 @@
 import { useEffect } from "react";
 import Script from "next/script";
+import { useRouter } from "next/router";
+
+const GA_TRACKING_ID = "G-4JBDGP7XT1"; // Replace with your Google Analytics ID
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   useEffect(() => {
+    // Initialize Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", GA_TRACKING_ID);
+
+    // Handle route changes
     const handleRouteChange = (url) => {
-      window.gtag("config", "G-4JBDGP7XT1", {
+      gtag("config", GA_TRACKING_ID, {
         page_path: url,
       });
     };
-    Router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      Router.events.off("routeChangeComplete", handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, []);
+  }, [router.events]);
 
   return (
     <>
+      {/* Load Google Analytics script */}
       <Script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-4JBDGP7XT1"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
       />
-      <Script id="google-analytics">
-        {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-4JBDGP7XT1');`}
-      </Script>
       <Component {...pageProps} />
     </>
   );
