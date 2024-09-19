@@ -43,7 +43,7 @@ const Header = () => {
         .nav-link {
           color: #fff;
           font-size: 1.2rem;
-          text-decoration: none;
+          text-decoration: none !important; /* Force no underline */
           margin: 0 1.5rem;
           position: relative;
           transition: color 0.2s ease-in-out, transform 0.3s ease;
@@ -76,10 +76,13 @@ const Header = () => {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
-        /* Remove default link underline */
+        /* Ensure no underline is applied to visited or unvisited links */
+        a:link,
         a:visited,
-        a:link {
-          text-decoration: none;
+        a:hover,
+        a:active,
+        Link {
+          text-decoration: none !important; /* Force no underline */
         }
       `}</style>
     </div>
