@@ -24,7 +24,6 @@ function Welcome(props) {
           background: linear-gradient(to right, #ff8c00, #ff6347);
           color: white;
           text-align: center;
-          padding: 2rem;
           overflow: hidden;
         }
 

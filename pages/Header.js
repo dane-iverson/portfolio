@@ -20,7 +20,6 @@ const Header = () => (
         justify-content: space-around;
         align-items: center;
         background-color: #222;
-        padding: 1rem 2rem;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
         position: sticky;
         top: 0;

@@ -47,7 +47,6 @@ const LinksPage = () => {
         <style jsx>{`
           .container {
             text-align: center;
-            padding: 2rem;
           }
           h1 {
             font-size: 3rem;

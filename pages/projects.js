@@ -41,7 +41,6 @@ export default () => (
 
       <style jsx>{`
         .container {
-          padding: 2rem;
           background-color: #f7f7f7;
           min-height: 100vh;
           display: flex;
