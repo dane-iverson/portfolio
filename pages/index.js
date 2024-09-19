@@ -1,5 +1,4 @@
 import Header from "./Header";
-import "../styles/globals.css"; // If you have a global CSS file
 
 function Welcome(props) {
   return (
@@ -15,21 +14,6 @@ function Welcome(props) {
           See My Work
         </a>
       </div>
-      <style jsx global>{`
-        /* Global reset */
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-
-        html,
-        body {
-          height: 100%;
-          width: 100%;
-          overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-      `}</style>
       <style jsx>{`
         .hero {
           display: flex;
