@@ -30,7 +30,7 @@ export default () => (
             <img
               src="/images/GithubPic.png"
               alt="GitHub Profile"
-              className="project-image"
+              className="project-image small"
             />
             <p className="card-text">
               <b>GitHub:</b> dane-iverson
@@ -46,7 +46,7 @@ export default () => (
           display: flex;
           flex-direction: column;
           align-items: center;
-          paddding: 2rem;
+          padding: 2rem; /* Fixed typo: changed paddding to padding */
         }
         .title {
           font-size: 3rem;
@@ -87,6 +87,9 @@ export default () => (
           width: 100%;
           height: auto;
           transition: opacity 0.3s ease-in-out;
+        }
+        .project-image.small {
+          width: 50%; /* Adjust size as needed */
         }
         .card-link:hover .project-image {
           opacity: 0.8;
