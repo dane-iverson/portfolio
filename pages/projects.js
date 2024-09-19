@@ -13,7 +13,7 @@ export default () => (
             className="card-link"
           >
             <img
-              src="/path/to/africart-image.jpg"
+              src="/images/AfricArt.png"
               alt="AfricArt"
               className="project-image"
             />
