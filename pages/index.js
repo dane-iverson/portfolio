@@ -10,7 +10,7 @@ function Welcome(props) {
           A passionate developer with a love for creating amazing web
           experiences.
         </p>
-        <a href="#projects" className="cta-button">
+        <a href="/projects" className="cta-button">
           See My Work
         </a>
       </div>
