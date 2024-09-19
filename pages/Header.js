@@ -76,6 +76,11 @@ const Header = () => {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
+        a: visited;
+        ,
+        a:link {
+          text-decoration: none;
+        }
       `}</style>
     </div>
   );
