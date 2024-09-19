@@ -76,8 +76,8 @@ const Header = () => {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
-        a: visited;
-        ,
+        /* Remove default link underline */
+        a:visited,
         a:link {
           text-decoration: none;
         }
