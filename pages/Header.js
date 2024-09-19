@@ -6,20 +6,20 @@ const Header = () => {
 
   return (
     <div className="header">
-      <Link href="/">
+      <Link href="/" legacyBehavior>
         <a className={`nav-link ${pathname === "/" ? "active" : ""}`}>Home</a>
       </Link>
-      <Link href="/about">
+      <Link href="/about" legacyBehavior>
         <a className={`nav-link ${pathname === "/about" ? "active" : ""}`}>
           About
         </a>
       </Link>
-      <Link href="/projects">
+      <Link href="/projects" legacyBehavior>
         <a className={`nav-link ${pathname === "/projects" ? "active" : ""}`}>
           Projects
         </a>
       </Link>
-      <Link href="/contact">
+      <Link href="/contact" legacyBehavior>
         <a className={`nav-link ${pathname === "/contact" ? "active" : ""}`}>
           Contact
         </a>

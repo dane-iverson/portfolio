@@ -31,7 +31,7 @@ export default () => (
           <a href="https://github.com/dane-iverson" className="card-link">
             <div className="image-container">
               <img
-                src="/images/GithubPic.png"
+                src="/images/GithubPic2.png"
                 alt="GitHub Profile"
                 className="project-image"
               />
@@ -78,6 +78,9 @@ export default () => (
           overflow: hidden;
           transition: transform 0.3s ease-in-out;
           animation: bounceIn 1s ease-out;
+          display: flex; /* Align items in a row */
+          flex-direction: column; /* Stack image and text vertically */
+          align-items: center; /* Center content */
         }
         .card:hover {
           transform: scale(1.05);
@@ -88,17 +91,16 @@ export default () => (
           text-decoration: none;
         }
         .image-container {
-          width: 300px; /* Fixed width */
-          height: 200px; /* Fixed height */
+          width: 100%; /* Full width */
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden; /* Hide overflow */
+          max-height: 300px; /* Set max height for the image */
         }
         .project-image {
-          width: auto; /* Allow width to adjust */
-          height: 100%; /* Full height */
-          max-width: none; /* Prevent image from resizing */
+          max-width: 100%; /* Full width of container */
+          max-height: 100%; /* Full height of container */
           object-fit: contain; /* Maintain aspect ratio */
           transition: opacity 0.3s ease-in-out;
         }
