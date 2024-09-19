@@ -66,6 +66,7 @@ export default function About() {
         </section>
         <style jsx>{`
           .about-container {
+            padding: 2rem;
             max-width: 1200px;
             margin: auto;
           }

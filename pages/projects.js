@@ -28,7 +28,7 @@ export default () => (
         <div className="card">
           <a href="https://github.com/dane-iverson" className="card-link">
             <img
-              src="/images/`githubPic"
+              src="/images/GithubPic"
               alt="GitHub Profile"
               className="project-image"
             />
@@ -46,6 +46,7 @@ export default () => (
           display: flex;
           flex-direction: column;
           align-items: center;
+          paddding: 2rem;
         }
         .title {
           font-size: 3rem;
