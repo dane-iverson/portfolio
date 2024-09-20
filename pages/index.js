@@ -120,7 +120,7 @@ function Welcome(props) {
           opacity: 0;
           transform: translateY(30px);
           animation: fadeInUp 3s forwards; /* Updated duration */
-          animation-delay: 6s; /* Delay for summary cards */
+          animation-delay: 5s; /* Delay for summary cards */
         }
 
         .summary-card h2 {
