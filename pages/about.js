@@ -104,7 +104,7 @@ export default function About() {
                 alt="Dirtbike Riding"
                 className="image"
               />
-              <img src="/images/jesus.jpg" alt="Jesus" className="image" />
+              <img src="/images/JesusImage.png" alt="Jesus" className="image" />
             </div>
           </section>
         </div>
