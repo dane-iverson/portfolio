@@ -65,6 +65,7 @@ const LinksPage = () => {
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             animation: fadeIn 2s ease-in-out;
+            transition: background-color 0.4s ease;
           }
 
           h1 {
@@ -107,6 +108,22 @@ const LinksPage = () => {
 
           .links a.hovered img {
             transform: rotate(360deg);
+          }
+
+          /* Dark mode styles */
+          @media (prefers-color-scheme: dark) {
+            .container {
+              background-color: rgba(30, 30, 30, 0.9);
+            }
+            h1 {
+              color: #fff;
+            }
+            .links a {
+              color: #fff;
+            }
+            .links a:hover {
+              color: #ff8c00;
+            }
           }
 
           @keyframes fadeIn {
