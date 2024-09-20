@@ -1,6 +1,7 @@
 import Header from "./Header";
+import Footer from "./footer";
 
-function Welcome(props) {
+function Home() {
   return (
     <>
       <Header />
@@ -37,6 +38,9 @@ function Welcome(props) {
           ))}
         </div>
       </div>
+
+      <Footer />
+
       <style jsx>{`
         .hero {
           display: flex;
@@ -162,4 +166,4 @@ function Welcome(props) {
   );
 }
 
-export default Welcome;
+export default Home;
