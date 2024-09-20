@@ -109,8 +109,8 @@ function Home() {
           animation: fadeInUp 3s forwards;
           animation-delay: 5s;
           display: flex;
-          justify-content: center; /* Center card wrapper */
-          width: 30%; /* Set width to match original layout */
+          justify-content: center;
+          width: 30%;
         }
 
         .summary-card {
@@ -118,22 +118,50 @@ function Home() {
           padding: 2rem;
           border-radius: 10px;
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-          width: 100%; /* Full width of the card wrapper */
+          width: 100%;
           text-align: left;
           transition: transform 0.4s ease, background-color 0.4s ease;
         }
 
         .summary-card:hover {
           transform: translateY(-10px);
-          background-color: rgba(255, 255, 255, 1);
+          /* No change in background color for dark mode */
         }
 
-        .summary-card h2 {
-          color: black;
+        /* Light mode styling */
+        @media (prefers-color-scheme: light) {
+          .summary-card:hover {
+            background-color: rgba(
+              240,
+              240,
+              240,
+              1
+            ); /* Lighter shade for hover in light mode */
+          }
+          .summary-card {
+            background: rgba(255, 255, 255, 1);
+            color: black;
+          }
+          .summary-card h2 {
+            color: black;
+          }
+          .summary-card p {
+            color: black;
+          }
         }
 
-        .summary-card p {
-          color: black;
+        /* Dark mode styling */
+        @media (prefers-color-scheme: dark) {
+          .summary-card {
+            background: rgba(50, 50, 50, 0.9);
+            color: white;
+          }
+          .summary-card h2 {
+            color: white;
+          }
+          .summary-card p {
+            color: white;
+          }
         }
 
         @keyframes fadeInUp {
