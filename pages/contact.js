@@ -50,7 +50,7 @@ const LinksPage = () => {
         <style jsx>{`
           .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, #f7f7f7, #ff6347);
+            background: linear-gradient(135deg, #f5a77a, #b52718);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -112,6 +112,13 @@ const LinksPage = () => {
 
           /* Dark mode styles */
           @media (prefers-color-scheme: dark) {
+            .hero {
+              background: linear-gradient(
+                135deg,
+                #a0c4ff,
+                #6a0dad
+              ); /* Gradient from light blue to dark purple */
+            }
             .container {
               background-color: rgba(30, 30, 30, 0.9);
             }

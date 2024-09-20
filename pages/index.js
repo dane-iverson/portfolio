@@ -48,7 +48,11 @@ function Home() {
           align-items: center;
           justify-content: center;
           min-height: 100vh;
-          background: linear-gradient(to right, #ff6347, #ff8c00);
+          background: linear-gradient(
+            to right,
+            #b00b0b,
+            #fc5805
+          ); /* Light mode gradient */
           color: white;
           text-align: center;
           padding: 2rem;
@@ -125,11 +129,18 @@ function Home() {
 
         .summary-card:hover {
           transform: translateY(-10px);
-          /* No change in background color for dark mode */
         }
 
         /* Light mode styling */
         @media (prefers-color-scheme: light) {
+          .hero {
+            background: linear-gradient(
+              to right,
+              #b52718,
+              #eb6426
+            ); /* Keep light mode gradient */
+          }
+
           .summary-card:hover {
             background-color: rgba(
               240,
@@ -152,6 +163,13 @@ function Home() {
 
         /* Dark mode styling */
         @media (prefers-color-scheme: dark) {
+          .hero {
+            background: linear-gradient(
+              to right,
+              #6a0dad,
+              #001f3f
+            ); /* Purple to dark blue for dark mode */
+          }
           .summary-card {
             background: rgba(50, 50, 50, 0.9);
             color: white;

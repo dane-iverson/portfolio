@@ -48,7 +48,7 @@ export default () => (
 
     <style jsx>{`
       .background {
-        background: linear-gradient(135deg, #ff8c00, #f7f7f7);
+        background: linear-gradient(135deg, #ff8c00, #f5a77a);
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -132,6 +132,13 @@ export default () => (
 
       /* Dark mode styles */
       @media (prefers-color-scheme: dark) {
+        .background {
+          background: linear-gradient(
+            135deg,
+            #183fb5,
+            #a0c4ff
+          ); /* Gradient from dark blue to lighter blue */
+        }
         .container {
           background-color: rgba(30, 30, 30, 0.9);
         }

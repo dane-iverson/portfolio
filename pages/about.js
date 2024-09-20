@@ -114,9 +114,9 @@ export default function About() {
             min-height: 100vh;
             background: linear-gradient(
               to right,
-              #ff8c00,
-              #ffb74d
-            ); /* Middleground gradient */
+              #eb6426,
+              #ff8c00
+            ); /* Light mode gradient */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -129,12 +129,7 @@ export default function About() {
             padding: 2rem;
             max-width: 1200px;
             margin: auto;
-            background-color: rgba(
-              255,
-              255,
-              255,
-              0.9
-            ); /* Slight transparency */
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             z-index: 1;
@@ -144,23 +139,24 @@ export default function About() {
 
           .about-container:hover {
             transform: translateY(-10px);
-            /* No change in background color for dark mode */
           }
 
           /* Light mode styling */
           @media (prefers-color-scheme: light) {
             .about-container:hover {
-              background-color: rgba(
-                240,
-                240,
-                240,
-                1
-              ); /* Lighter shade for hover in light mode */
+              background-color: rgba(240, 240, 240, 1);
             }
           }
 
           /* Dark mode styling */
           @media (prefers-color-scheme: dark) {
+            .about-wrapper {
+              background: linear-gradient(
+                to right,
+                #001f3f,
+                #183fb5
+              ); /* Dark mode gradient */
+            }
             .about-container {
               background-color: rgba(50, 50, 50, 0.9);
               color: white;
@@ -225,18 +221,12 @@ export default function About() {
 
           section:hover {
             transform: translateY(-10px);
-            /* No change in background color for dark mode */
           }
 
           /* Light mode styling */
           @media (prefers-color-scheme: light) {
             section:hover {
-              background-color: rgba(
-                240,
-                240,
-                240,
-                1
-              ); /* Lighter shade for hover in light mode */
+              background-color: rgba(240, 240, 240, 1);
             }
           }
 
