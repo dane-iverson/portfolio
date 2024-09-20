@@ -31,7 +31,7 @@ export default () => (
           <a href="https://github.com/dane-iverson" className="card-link">
             <div className="image-container">
               <img
-                src="/images/GithubPic2.png"
+                src="/images/Github.png"
                 alt="GitHub Profile"
                 className="project-image"
               />
