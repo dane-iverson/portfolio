@@ -50,7 +50,7 @@ const LinksPage = () => {
         <style jsx>{`
           .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, #ff8c00, #f7f7f7);
+            background: linear-gradient(135deg, #f7f7f7, #ff6347);
             display: flex;
             align-items: center;
             justify-content: center;
