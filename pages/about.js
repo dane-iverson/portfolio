@@ -139,6 +139,39 @@ export default function About() {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             z-index: 1;
             position: relative;
+            transition: transform 0.4s ease, background-color 0.4s ease;
+          }
+
+          .about-container:hover {
+            transform: translateY(-10px);
+            /* No change in background color for dark mode */
+          }
+
+          /* Light mode styling */
+          @media (prefers-color-scheme: light) {
+            .about-container:hover {
+              background-color: rgba(
+                240,
+                240,
+                240,
+                1
+              ); /* Lighter shade for hover in light mode */
+            }
+          }
+
+          /* Dark mode styling */
+          @media (prefers-color-scheme: dark) {
+            .about-container {
+              background-color: rgba(50, 50, 50, 0.9);
+              color: white;
+            }
+            h1,
+            h2 {
+              color: white;
+            }
+            p {
+              color: white;
+            }
           }
 
           h1,
@@ -192,7 +225,34 @@ export default function About() {
 
           section:hover {
             transform: translateY(-10px);
-            background-color: rgba(255, 255, 255, 1);
+            /* No change in background color for dark mode */
+          }
+
+          /* Light mode styling */
+          @media (prefers-color-scheme: light) {
+            section:hover {
+              background-color: rgba(
+                240,
+                240,
+                240,
+                1
+              ); /* Lighter shade for hover in light mode */
+            }
+          }
+
+          /* Dark mode styling */
+          @media (prefers-color-scheme: dark) {
+            section {
+              background-color: rgba(50, 50, 50, 0.9);
+              color: white;
+            }
+            h1,
+            h2 {
+              color: white;
+            }
+            p {
+              color: white;
+            }
           }
 
           @keyframes fadeIn {
