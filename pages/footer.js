@@ -44,10 +44,32 @@ function Footer() {
       </div>
       <style jsx>{`
         footer {
-          background: #333;
-          color: white;
+          background: #333; /* Default dark mode background */
+          color: white; /* Default dark mode text color */
           padding: 2rem;
           text-align: center;
+        }
+
+        /* Light mode styles */
+        @media (prefers-color-scheme: light) {
+          footer {
+            background: #f0f0f0; /* Light gray background */
+            color: black; /* Black text */
+          }
+          a {
+            color: #ff8c00; /* Link color */
+          }
+        }
+
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+          footer {
+            background: #333; /* Dark gray background */
+            color: white; /* White text */
+          }
+          a {
+            color: #ff8c00; /* Link color */
+          }
         }
 
         .footer-content {
@@ -72,7 +94,6 @@ function Footer() {
         }
 
         a {
-          color: #ff8c00;
           text-decoration: none;
         }
 

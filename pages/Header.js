@@ -29,25 +29,51 @@ const Header = () => {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          background-color: #222;
+          background-color: #222; /* Default dark mode background */
           padding: 1rem 2rem;
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
           position: sticky;
           top: 0;
           z-index: 1000;
-          transition: background-color 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
         }
-        .header:hover {
-          background-color: #333;
+
+        /* Light mode styles */
+        @media (prefers-color-scheme: light) {
+          .header {
+            background-color: #f0f0f0; /* Light gray background */
+            color: black; /* Black text */
+          }
+          .nav-link {
+            color: black; /* Black text for links */
+          }
+          .nav-link:hover {
+            color: #ff8c00; /* Hover color */
+          }
         }
+
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+          .header {
+            background-color: #444; /* Dark gray background */
+            color: white; /* White text */
+          }
+          .nav-link {
+            color: white; /* White text for links */
+          }
+          .nav-link:hover {
+            color: #ff8c00; /* Hover color */
+          }
+        }
+
         .nav-link {
-          color: #fff;
           font-size: 1.2rem;
-          text-decoration: none !important; /* Force no underline */
+          text-decoration: none !important;
           margin: 0 1.5rem;
           position: relative;
-          transition: color 0.2s ease-in-out, transform 0.3s ease;
+          transition: transform 0.3s ease;
         }
+
         .nav-link::after {
           content: "";
           position: absolute;
@@ -60,29 +86,31 @@ const Header = () => {
           transform-origin: bottom right;
           transition: transform 0.3s ease;
         }
+
         .nav-link:hover::after {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
+
         .nav-link:hover {
-          color: #ff8c00;
           transform: translateY(-2px);
         }
+
         .nav-link.active {
-          color: #ff8c00;
           font-weight: bold;
         }
+
         .nav-link.active::after {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
-        /* Ensure no underline is applied to visited or unvisited links */
+
         a:link,
         a:visited,
         a:hover,
         a:active,
         Link {
-          text-decoration: none !important; /* Force no underline */
+          text-decoration: none !important;
         }
       `}</style>
     </div>
