@@ -61,6 +61,7 @@ export default () => (
         padding: 2rem;
         width: 80%;
         max-width: 800px;
+        transition: background-color 0.4s ease;
       }
       .title {
         font-size: 3rem;
@@ -122,12 +123,35 @@ export default () => (
         color: #333;
         padding: 1rem;
         background-color: #fff;
-        transition: background-color 0.4s ease-in-out;
+        transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
       }
       .card-link:hover .card-text {
         background-color: #ff8c00;
         color: #fff;
       }
+
+      /* Dark mode styles */
+      @media (prefers-color-scheme: dark) {
+        .container {
+          background-color: rgba(30, 30, 30, 0.9);
+        }
+        .title,
+        .subtitle {
+          color: #fff;
+        }
+        .card {
+          background-color: rgba(50, 50, 50, 0.9);
+        }
+        .card-text {
+          background-color: #333; /* Dark gray background for button */
+          color: #fff; /* Button text color */
+        }
+        .card-link:hover .card-text {
+          background-color: #ff8c00; /* Keep hover color */
+          color: #fff; /* Keep text color on hover */
+        }
+      }
+
       @keyframes fadeIn {
         from {
           opacity: 0;
