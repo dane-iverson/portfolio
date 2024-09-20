@@ -21,7 +21,11 @@ function Welcome(props) {
           align-items: center;
           justify-content: center;
           min-height: 100vh;
-          background: linear-gradient(to right, #ff8c00, #ff6347);
+          background: linear-gradient(
+            to right,
+            #ff6347,
+            #ff8c00
+          ); /* Swapped colors */
           color: white;
           text-align: center;
           padding: 2rem;

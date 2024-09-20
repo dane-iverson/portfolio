@@ -1,4 +1,3 @@
-// pages/about.js
 import Header from "./Header";
 
 export default function About() {
@@ -113,7 +112,11 @@ export default function About() {
           .about-wrapper {
             position: relative;
             min-height: 100vh;
-            background: linear-gradient(to right, #ff8c00, #ff6347);
+            background: linear-gradient(
+              to right,
+              #ff8c00,
+              #ffb74d
+            ); /* Middleground gradient */
             display: flex;
             align-items: center;
             justify-content: center;
