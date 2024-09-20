@@ -147,7 +147,7 @@ export default function About() {
             text-align: center;
             margin: 1rem 0;
             font-family: "Poppins", sans-serif;
-            animation: fadeInDown 3s ease-in-out; /* Updated duration */
+            animation: fadeInDown 1s ease-in-out;
           }
 
           p {
@@ -156,7 +156,7 @@ export default function About() {
             line-height: 1.8;
             margin: 1rem 0;
             font-family: "Open Sans", sans-serif;
-            animation: fadeIn 3s ease-in; /* Updated duration */
+            animation: fadeIn 1.5s ease-in;
           }
 
           .image-container {
@@ -164,7 +164,7 @@ export default function About() {
             justify-content: center;
             gap: 1rem;
             margin-top: 1.5rem;
-            animation: fadeIn 3.5s ease-in-out; /* Updated duration */
+            animation: fadeIn 2s ease-in-out;
             flex-wrap: wrap;
           }
 
@@ -174,7 +174,6 @@ export default function About() {
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.4s ease, opacity 0.4s ease;
             opacity: 0.9;
-            animation: scaleIn 3.5s forwards; /* Added scale-in effect */
           }
 
           .image:hover {
@@ -189,9 +188,6 @@ export default function About() {
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.4s ease, background-color 0.4s ease;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 3s forwards; /* Updated duration */
           }
 
           section:hover {
@@ -216,28 +212,6 @@ export default function About() {
             to {
               opacity: 1;
               transform: translateY(0);
-            }
-          }
-
-          @keyframes fadeInUp {
-            0% {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-          @keyframes scaleIn {
-            0% {
-              transform: scale(0);
-              opacity: 0;
-            }
-            100% {
-              transform: scale(1);
-              opacity: 1;
             }
           }
 

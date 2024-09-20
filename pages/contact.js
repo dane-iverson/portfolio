@@ -50,11 +50,7 @@ const LinksPage = () => {
         <style jsx>{`
           .hero {
             min-height: 100vh;
-            background: linear-gradient(
-              to right,
-              #f7f7f7,
-              #ff6347
-            ); /* Adjusted gradient to match projects page */
+            background: linear-gradient(135deg, #ff8c00, #f7f7f7);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -65,21 +61,16 @@ const LinksPage = () => {
           .container {
             text-align: center;
             padding: 2rem;
-            background-color: rgba(
-              255,
-              255,
-              255,
-              0.9
-            ); /* Slight transparency */
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
           }
 
           h1 {
             font-size: 3rem;
             color: #ff8c00;
             margin-bottom: 2rem;
-            animation: fadeIn 2s ease-in-out;
           }
 
           .links {

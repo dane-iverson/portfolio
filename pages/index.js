@@ -14,32 +14,27 @@ function Welcome(props) {
           See My Latest Work
         </a>
         <div className="summary-cards">
-          <div className="summary-card">
-            <h2>Projects</h2>
-            <p>Explore all of my public projects and repositories.</p>
-            <a href="/projects" className="cta-button">
-              See My Work
-            </a>
-          </div>
-          <div className="summary-card">
-            <h2>About Me</h2>
-            <p>
-              Learn more about my background, education, and what makes me, me.
-            </p>
-            <a href="/about" className="cta-button">
-              See My Story
-            </a>
-          </div>
-          <div className="summary-card">
-            <h2>Contact</h2>
-            <p>
-              Get in touch with me to discuss ideas, collaborations, or just to
-              say hello!
-            </p>
-            <a href="/contact" className="cta-button">
-              Get in Touch
-            </a>
-          </div>
+          {["Projects", "About Me", "Contact"].map((title, index) => (
+            <div className="card-wrapper" key={index}>
+              <div className="summary-card">
+                <h2>{title}</h2>
+                <p>
+                  {title === "Projects" &&
+                    "Explore all of my public projects and repositories."}
+                  {title === "About Me" &&
+                    "Learn more about my background, education, and what makes me, me."}
+                  {title === "Contact" &&
+                    "Get in touch with me to discuss ideas, collaborations, or just to say hello!"}
+                </p>
+                <a
+                  href={`/${title.toLowerCase().replace(" ", "")}`}
+                  className="cta-button"
+                >
+                  See My {title}
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <style jsx>{`
@@ -49,11 +44,7 @@ function Welcome(props) {
           align-items: center;
           justify-content: center;
           min-height: 100vh;
-          background: linear-gradient(
-            to right,
-            #ff6347,
-            #ff8c00
-          ); /* Swapped colors */
+          background: linear-gradient(to right, #ff6347, #ff8c00);
           color: white;
           text-align: center;
           padding: 2rem;
@@ -66,8 +57,7 @@ function Welcome(props) {
           font-family: "Montserrat", sans-serif;
           opacity: 0;
           transform: translateY(-50px);
-          animation: fadeInUp 3s forwards; /* Updated duration */
-          animation-delay: 0s; /* No delay for h1 */
+          animation: fadeInUp 3s forwards;
         }
 
         p {
@@ -76,8 +66,8 @@ function Welcome(props) {
           font-family: "Lato", sans-serif;
           opacity: 0;
           transform: translateY(-30px);
-          animation: fadeInUp 3s forwards; /* Updated duration */
-          animation-delay: 1.5s; /* Delay for paragraph */
+          animation: fadeInUp 3s forwards;
+          animation-delay: 1.5s;
         }
 
         .cta-button {
@@ -92,8 +82,8 @@ function Welcome(props) {
           transition: background 0.3s ease, transform 0.3s ease;
           transform: translateY(10px);
           opacity: 0;
-          animation: fadeInUp 3s forwards; /* Updated duration */
-          animation-delay: 3s; /* Delay for the main button */
+          animation: fadeInUp 3s forwards;
+          animation-delay: 3s;
         }
 
         .cta-button:hover {
@@ -109,26 +99,37 @@ function Welcome(props) {
           width: 100%;
         }
 
+        .card-wrapper {
+          opacity: 0;
+          transform: translateY(30px);
+          animation: fadeInUp 3s forwards;
+          animation-delay: 5s;
+          display: flex;
+          justify-content: center; /* Center card wrapper */
+          width: 30%; /* Set width to match original layout */
+        }
+
         .summary-card {
           background: rgba(255, 255, 255, 0.9);
           padding: 2rem;
           border-radius: 10px;
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-          width: 30%;
-          margin: 1rem;
+          width: 100%; /* Full width of the card wrapper */
           text-align: left;
-          opacity: 0;
-          transform: translateY(30px);
-          animation: fadeInUp 3s forwards; /* Updated duration */
-          animation-delay: 5s; /* Delay for summary cards */
+          transition: transform 0.4s ease, background-color 0.4s ease;
+        }
+
+        .summary-card:hover {
+          transform: translateY(-10px);
+          background-color: rgba(255, 255, 255, 1);
         }
 
         .summary-card h2 {
-          color: black; /* Change title color to black */
+          color: black;
         }
 
         .summary-card p {
-          color: black; /* Change summary text color to black */
+          color: black;
         }
 
         @keyframes fadeInUp {
@@ -148,7 +149,12 @@ function Welcome(props) {
           }
 
           .summary-card {
-            width: 90%; /* Adjust width for smaller screens */
+            width: 90%;
+          }
+
+          .card-wrapper {
+            width: 90%; /* Adjust for smaller screens */
+            justify-content: center; /* Center for smaller screens */
           }
         }
       `}</style>

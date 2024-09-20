@@ -55,14 +55,9 @@ export default () => (
         justify-content: center;
       }
       .container {
-        background-color: rgba(
-          255,
-          255,
-          255,
-          0.9
-        ); /* Slightly transparent white */
+        background-color: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         padding: 2rem;
         width: 80%;
         max-width: 800px;
@@ -87,16 +82,18 @@ export default () => (
       .card {
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        transition: transform 0.3s ease-in-out;
-        animation: bounceIn 1s ease-out;
-        display: flex; /* Align items in a row */
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center content */
+        transition: transform 0.4s ease, background-color 0.4s ease;
+        animation: fadeInUp 1.5s ease-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
       }
       .card:hover {
         transform: scale(1.05);
+        background-color: rgba(255, 140, 0, 0.1);
       }
       .card-link {
         display: block;
@@ -104,18 +101,18 @@ export default () => (
         text-decoration: none;
       }
       .image-container {
-        width: 100%; /* Full width */
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden; /* Hide overflow */
-        max-height: 300px; /* Set max height for the image */
+        overflow: hidden;
+        max-height: 300px;
       }
       .project-image {
-        max-width: 100%; /* Full width of container */
-        max-height: 100%; /* Full height of container */
-        object-fit: contain; /* Maintain aspect ratio */
-        transition: opacity 0.3s ease-in-out;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: opacity 0.4s ease-in-out;
       }
       .card-link:hover .project-image {
         opacity: 0.8;
@@ -125,7 +122,7 @@ export default () => (
         color: #333;
         padding: 1rem;
         background-color: #fff;
-        transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
       }
       .card-link:hover .card-text {
         background-color: #ff8c00;
@@ -147,14 +144,14 @@ export default () => (
           transform: translateX(0);
         }
       }
-      @keyframes bounceIn {
+      @keyframes fadeInUp {
         from {
-          transform: scale(0.5);
           opacity: 0;
+          transform: translateY(20px);
         }
         to {
-          transform: scale(1);
           opacity: 1;
+          transform: translateY(0);
         }
       }
     `}</style>
