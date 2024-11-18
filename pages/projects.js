@@ -7,6 +7,24 @@ export default () => (
       <div className="container">
         <h1 className="title">Projects</h1>
         <div className="section">
+          <h2 className="subtitle">Company Projects</h2>
+          <div className="card">
+            <a href="https://autoimperium.co.za" className="card-link">
+              <div className="image-container">
+                <img
+                  src="/images/Imperium.png"
+                  alt="Imperium Auto Group"
+                  className="project-image"
+                />
+              </div>
+              <p className="card-text">
+                <b>Website:</b> Imperium Auto Group
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div className="section">
           <h2 className="subtitle">Deployed</h2>
           <div className="card">
             <a
