@@ -9,7 +9,10 @@ export default () => (
         <div className="section">
           <h2 className="subtitle">Company Projects</h2>
           <div className="card">
-            <a href="https://autoimperium.co.za" className="card-link">
+            <a
+              href="https://imperium-auto-group-site.vercel.app/"
+              className="card-link"
+            >
               <div className="image-container">
                 <img
                   src="/images/Imperium.png"
