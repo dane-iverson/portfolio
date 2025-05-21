@@ -15,14 +15,14 @@ function Home() {
           See My Latest Work
         </a>
         <div className="summary-cards">
-          {["Projects", "About Me", "Contact"].map((title, index) => (
+          {["Projects", "About", "Contact"].map((title, index) => (
             <div className="card-wrapper" key={index}>
               <div className="summary-card">
                 <h2>{title}</h2>
                 <p>
                   {title === "Projects" &&
                     "Explore all of my public projects and repositories."}
-                  {title === "About Me" &&
+                  {title === "About" &&
                     "Learn more about my background, education, and what makes me, me."}
                   {title === "Contact" &&
                     "Get in touch with me to discuss ideas, collaborations, or just to say hello!"}
