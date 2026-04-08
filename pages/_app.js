@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Script from "next/script";
 import { useRouter } from "next/router";
+import "../styles/globals.css";
 
 const GA_TRACKING_ID = "G-4JBDGP7XT1";
 
@@ -35,29 +36,6 @@ function MyApp({ Component, pageProps }) {
           gtag('config', '${GA_TRACKING_ID}');`}
       </Script>
       <Component {...pageProps} />
-
-      {/* Global CSS */}
-      <style jsx global>{`
-        /* Global reset */
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-
-        html,
-        body {
-          height: 100%;
-          width: 100%;
-          overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-
-        /* Optional: additional global styles */
-        body {
-          font-family: Arial, sans-serif;
-          line-height: 1.6;
-        }
-      `}</style>
     </>
   );
 }
