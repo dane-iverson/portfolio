@@ -9,12 +9,11 @@ export default function Hero() {
           Full-Stack Developer Building Real-World Business Tools
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
-          I design and develop practical web applications that solve real
-          business problems—focusing on sales systems, lead tracking, and
-          user-driven platforms.
+          I build web apps for businesses that need to get things done: sales
+          pipelines, lead tracking, and tools real teams use every day.
         </p>
         <p className="text-lg text-gray-600 mb-10 font-medium">
-          Currently building a CRM used by a real sales team.
+          Currently building a CRM in active use by a sales team.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a

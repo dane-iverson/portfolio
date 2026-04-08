@@ -6,8 +6,8 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Ready to build practical business tools that drive real results? Let's
-          discuss your project and how I can help your team succeed.
+          If you're looking for a developer who can ship something useful, let's
+          talk.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a

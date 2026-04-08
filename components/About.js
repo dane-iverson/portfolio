@@ -7,16 +7,14 @@ export default function About() {
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-            With a background in sales and operations, I understand the
-            challenges of real-world business processes. As a full-stack
-            developer, I build practical, efficient tools that solve actual
-            problems—focusing on usability and results over unnecessary
-            complexity.
+            I spent years in sales and operations before switching to
+            development full-time. That background changes how I build. I think
+            about who's actually using the tool and what they need it to do, not
+            just what looks good on screen.
           </p>
           <p className="text-xl text-gray-700 leading-relaxed">
-            I deliver systems that teams rely on daily, from CRM platforms to
-            inventory management, ensuring they perform reliably and drive
-            business growth.
+            The projects I take on tend to have real users with real deadlines.
+            I keep things simple, maintainable, and built to last.
           </p>
         </div>
       </div>

@@ -6,9 +6,9 @@ export default function FeaturedProject() {
           Sales CRM for Real-World Teams
         </h2>
         <p className="text-xl text-gray-700 mb-10 text-center max-w-3xl mx-auto leading-relaxed">
-          A comprehensive CRM system designed to streamline sales processes for
-          growing businesses. Currently used by active sales teams to manage
-          leads, track opportunities, and close deals more effectively.
+          A full-stack CRM built for a real sales team. It manages leads, tracks
+          the pipeline, and gives the team visibility into what's working and
+          what isn't.
         </p>
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           <div>
@@ -59,15 +59,14 @@ export default function FeaturedProject() {
             </h3>
             <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600">
               <p className="text-gray-700 mb-4">
-                This CRM has helped sales teams increase conversion rates by{" "}
-                <strong className="text-blue-600">25%</strong>, reduce
-                administrative time by{" "}
-                <strong className="text-blue-600">40%</strong>, and provide
-                actionable data for strategic decision-making.
+                Since going live, the team has cut admin time by{" "}
+                <strong className="text-blue-600">40%</strong> and improved
+                conversion rates by{" "}
+                <strong className="text-blue-600">25%</strong>. They now have
+                clear data to make better decisions week to week.
               </p>
               <p className="text-gray-700">
-                Built for real-world use, it handles daily operations for teams
-                managing hundreds of leads.
+                It's in daily use by a team managing hundreds of active leads.
               </p>
             </div>
           </div>

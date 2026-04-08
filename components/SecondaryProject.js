@@ -6,9 +6,8 @@ export default function SecondaryProject() {
           Vehicle Inventory & Customer Interest Platform
         </h2>
         <p className="text-xl text-gray-700 mb-10 text-center max-w-3xl mx-auto leading-relaxed">
-          A robust platform for auto dealerships to manage vehicle inventory
-          while enabling customers to browse, save favorites, and express
-          interest in vehicles.
+          Built for a local auto dealership to manage their stock and let buyers
+          browse, save cars they like, and reach out directly through the site.
         </p>
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           <div>
@@ -52,14 +51,14 @@ export default function SecondaryProject() {
             </h3>
             <div className="bg-white p-6 rounded-lg border-l-4 border-green-600 shadow-sm">
               <p className="text-gray-700 mb-4">
-                Reduced manual inventory errors by{" "}
-                <strong className="text-green-600">50%</strong> and increased
-                customer engagement through personalized features, leading to
-                higher conversion rates for dealership sales.
+                Inventory errors dropped by{" "}
+                <strong className="text-green-600">50%</strong> once the old
+                spreadsheet process was replaced. Customers now engage directly
+                through the platform instead of just calling in.
               </p>
               <p className="text-gray-700">
-                Delivered on time and within budget, demonstrating strong
-                project management and client collaboration skills.
+                Delivered on time, directly to the client, with ongoing updates
+                still being made.
               </p>
             </div>
           </div>
