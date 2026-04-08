@@ -2,9 +2,12 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 px-6 bg-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+          Get In Touch
+        </h2>
         <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Ready to build practical business tools that drive real results? Let's discuss your project and how I can help your team succeed.
+          Ready to build practical business tools that drive real results? Let's
+          discuss your project and how I can help your team succeed.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
