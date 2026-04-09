@@ -9,14 +9,14 @@ export default function Hero() {
           Full-Stack Developer Building Real-World Business Tools
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
-          Open to Full-Stack Developer roles (Remote only). I build practical
+          Open to remote full-stack developer roles globally. I build practical
           web applications with React and Node.js that solve real workflow
           problems.
         </p>
         <p className="text-lg text-gray-600 mb-10 font-medium">
           Current role: Fluid Sales Representative at Stewarts and Lloyds.
-          Available for remote developer roles with a standard two-week notice
-          period.
+          Available globally for remote developer roles with a standard two-week
+          notice period.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
