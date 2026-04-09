@@ -6,8 +6,8 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-          If you're looking for a developer who can ship something useful, let's
-          talk.
+          Hiring for a full-stack developer role? I would love to discuss how I
+          can contribute.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
@@ -19,6 +19,7 @@ export default function Contact() {
           <a
             href="https://github.com/dane-iverson"
             target="_blank"
+            rel="noopener noreferrer"
             className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors duration-200"
           >
             GitHub
@@ -26,6 +27,7 @@ export default function Contact() {
           <a
             href="https://wa.me/27733801962"
             target="_blank"
+            rel="noopener noreferrer"
             className="border-2 border-green-300 text-green-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition-colors duration-200"
           >
             WhatsApp

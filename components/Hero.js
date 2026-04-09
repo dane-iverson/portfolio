@@ -9,12 +9,14 @@ export default function Hero() {
           Full-Stack Developer Building Real-World Business Tools
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
-          I build practical web apps for sales and operations teams: lead
-          tracking, pipeline visibility, and workflows people actually use.
+          Open to Full-Stack Developer roles (Remote only). I build practical
+          web applications with React and Node.js that solve real workflow
+          problems.
         </p>
         <p className="text-lg text-gray-600 mb-10 font-medium">
-          Current role: Fluid Sales Representative at Stewarts and Lloyds, while
-          building and shipping a CRM for real day-to-day use.
+          Current role: Fluid Sales Representative at Stewarts and Lloyds.
+          Available for remote developer roles with a standard two-week notice
+          period.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
