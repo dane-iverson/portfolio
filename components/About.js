@@ -13,8 +13,9 @@ export default function About() {
             just what looks good on screen.
           </p>
           <p className="text-xl text-gray-700 leading-relaxed">
-            The projects I take on tend to have real users with real deadlines.
-            I keep things simple, maintainable, and built to last.
+            My CRM project is a live work in progress built around real daily
+            sales problems, with an upcoming client implementation for AlgoaFM.
+            I keep systems practical, maintainable, and ready to grow.
           </p>
         </div>
       </div>

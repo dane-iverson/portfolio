@@ -9,6 +9,15 @@ export default function SecondaryProject() {
           Built for a local auto dealership to manage their stock and let buyers
           browse, save cars they like, and reach out directly through the site.
         </p>
+        <div className="mb-12">
+          <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+            <img
+              src="/images/Imperium.png"
+              alt="Imperium vehicle platform landing page"
+              className="aspect-video w-full rounded-lg border border-gray-200 object-cover"
+            />
+          </div>
+        </div>
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">
@@ -72,11 +81,10 @@ export default function SecondaryProject() {
             View Live Site
           </a>
           <a
-            href="https://github.com/dane-iverson/imperium-repo"
-            target="_blank"
+            href="mailto:hyperiondane@gmail.com?subject=Imperium%20Repo%20Access%20Request"
             className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors duration-200"
           >
-            GitHub Repo
+            Private Repo (Available on Request)
           </a>
         </div>
       </div>

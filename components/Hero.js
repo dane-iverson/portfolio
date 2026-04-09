@@ -13,7 +13,8 @@ export default function Hero() {
           pipelines, lead tracking, and tools real teams use every day.
         </p>
         <p className="text-lg text-gray-600 mb-10 font-medium">
-          Currently building a CRM in active use by a sales team.
+          Currently building a CRM for my own day-to-day sales workflow, with a
+          client rollout planned next.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a
