@@ -7,15 +7,17 @@ export default function About() {
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-            I spent years in sales and operations before switching to
-            development full-time. That background changes how I build. I think
-            about who's actually using the tool and what they need it to do, not
-            just what looks good on screen.
+            I come from sales and operations, so I build software around real
+            process pain points, not theory. My current role is Fluid Sales
+            Representative at Stewarts and Lloyds, where I work directly with
+            customers, orders, stock, and follow-up workflows every day.
           </p>
           <p className="text-xl text-gray-700 leading-relaxed">
-            My CRM project is a live work in progress built around real daily
-            sales problems, with an upcoming client implementation for AlgoaFM.
-            I keep systems practical, maintainable, and ready to grow.
+            Alongside that, I build full-stack tools with immediate business
+            value, including my in-progress CRM and a client website contract
+            for Imperium Auto Group. Past roles in operations and team
+            leadership (Romans Pizza, Walmer Padel, and Quayside) shaped how I
+            ship maintainable systems that are practical under real deadlines.
           </p>
         </div>
       </div>
